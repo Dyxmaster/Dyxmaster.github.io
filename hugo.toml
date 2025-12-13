@@ -1,10 +1,47 @@
 baseURL = "https://Dyxmaster.github.io/"
 languageCode = "zh-cn"
-title = "My Blog"
+title = "Dyxmaster"
 theme = "PaperMod"
 
+# ========== 主题基础参数 ==========
 [params]
+  defaultTheme = "auto"       # 自动暗色/亮色
   ShowReadingTime = true
-  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowWordCount = true
+
+# ========== 首页个人简介模式 ==========
+[params.profileMode]
+  enabled = true
+  title = "Dyxmaster 👋"
+  subtitle = "AI · Robotics · Machine Learning"
+  imageUrl = ""          # 以后可以放头像路径
+  imageTitle = "avatar"
+  imageWidth = 120
+  imageHeight = 120
+
+# ========== 社交链接 ==========
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Dyxmaster"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:your_email@example.com"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 3
